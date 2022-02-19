@@ -31,7 +31,7 @@ void ShowImportant(string[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
-        if(array[i].Length>=5)
+        if(array[i].Length<=3)
         {
             Console.Write($"{array[i]} ");
         }
@@ -39,7 +39,9 @@ void ShowImportant(string[] array)
 }
 Console.WriteLine("Hello, User! Enter words, press 'Enter'-button and you will see a magic!");
 string line = Console.ReadLine() ?? "0";
-Console.WriteLine($"There are {HowManyWordsInLine(line)} words");
+Console.WriteLine($"There are {HowManyWordsInLine(line)} words in total here");
 string[] newArray = CreateNewArray(line, HowManyWordsInLine(line));
 ShowImportant(newArray);
+Console.WriteLine();
+Console.WriteLine("There is words which consist from 3 or less characters");
 
