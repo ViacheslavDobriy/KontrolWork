@@ -24,4 +24,4 @@ There is creating new variable with data type string [ ]. Size of this array dep
 
 **One input argument**. It's array, that was created in second method.
 
-There is a cycle for moving inside of this new array, but there is a condition that will help to catch words that have 5 or more character.
+There is a cycle for moving inside of this new array, but there is a condition that will help to catch words that have 3 or less characters.
